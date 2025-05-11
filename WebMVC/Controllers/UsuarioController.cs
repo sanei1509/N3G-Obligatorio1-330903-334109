@@ -157,6 +157,18 @@ namespace WebMVC.Controllers
 
         }
 
+        // Acción para cerrar sesión
+        [HttpPost]
+        public IActionResult Logout()
+        {
+            // Eliminar la sesión
+            HttpContext.Session.Remove("Logueado");
+
+            // Redirigir al inicio o a la página de login
+            return RedirectToAction("Index", "Home"); // O cualquier otra página que prefieras
+        }
+
+
 
     }
 }

@@ -37,6 +37,8 @@ namespace LogicaAccesoDatos.EF.Config
 
             });
 
+
+
             builder.OwnsOne(nt => nt.NroTracking, nroTracking =>
             {
                 nroTracking.Property(nt => nt.Value).HasColumnName("NroTracking");

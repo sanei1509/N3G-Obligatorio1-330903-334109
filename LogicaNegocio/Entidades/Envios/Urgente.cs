@@ -7,6 +7,8 @@ namespace LogicaNegocio.Entidades.Envios
 {
     public class Urgente : Envio
     {
+
+
         public DireccionPostal DireccionPostal { get; set; }
         public Entregado Entregado { get; set; }
         protected Urgente() 
