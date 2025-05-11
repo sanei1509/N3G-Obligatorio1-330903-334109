@@ -14,7 +14,8 @@
                 int? LugarRetiroId,
                 // Para Urgente
                 string DireccionPostal,
-                bool? Entregado
+                bool? Entregado,
+                string CorreoCliente
             )
         {
         }
